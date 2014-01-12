@@ -1,4 +1,4 @@
-CI_JENKINS
-==========
+CI_TESTER
+=========
 
-Demo-Projekt für Jenkins
+Demo-Projekt für CI-Systeme
