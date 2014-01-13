@@ -22,8 +22,8 @@ public final class StringUtil
     CharacterIterator characterIterator = new StringCharacterIterator(s);
     for (char ch = characterIterator.first(); ch != CharacterIterator.DONE; ch = characterIterator.next())
     {
-      //      if (ch >= 'a' && ch <= 'z') // Fehler: Das klappt nur bei ASCII!
-      if (Character.isLowerCase(ch))
+      if (ch >= 'a' && ch <= 'z') // [Fehler: Das klappt nur bei ASCII!]
+      //      if (Character.isLowerCase(ch))
       {
         ++result;
       }

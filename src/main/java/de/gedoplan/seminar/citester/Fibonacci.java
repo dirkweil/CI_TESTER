@@ -7,7 +7,7 @@ package de.gedoplan.seminar.citester;
  */
 public final class Fibonacci
 {
-  /**
+  /* [CS-Warnung: Dies sollte Javadoc sein, ist aber nur ein einfacher Kommentar]
    * Ausgabe der Fibonacci-Folge bis 50
    * 
    * @param n Stelle
@@ -27,7 +27,8 @@ public final class Fibonacci
 
     int last = 0;
     int current = 1;
-    while (n >= 2) // Fehler: Hier müsste n>=2 stehen
+    while (n > 2) // [Fehler: Bricht zu früh ab]
+    //    while (n >= 2)
     {
       int old = current;
       current = last + current;
@@ -37,7 +38,9 @@ public final class Fibonacci
     return current;
   }
 
+  /* [CS-Warnung: Für Util-Klassen sollte der Konstruktor da sein]
   private Fibonacci()
   {
   }
+  */
 }
