@@ -5,7 +5,7 @@ package de.gedoplan.seminar.citester;
  * 
  * @author dw
  */
-public class Fibonacci
+public final class Fibonacci
 {
   // Ausgabe der Fibonacci-Folge bis 50
   public static int fibonacci(int n)
@@ -30,5 +30,9 @@ public class Fibonacci
       --n;
     }
     return current;
+  }
+
+  private Fibonacci()
+  {
   }
 }
