@@ -7,7 +7,12 @@ package de.gedoplan.seminar.citester;
  */
 public final class Fibonacci
 {
-  // Ausgabe der Fibonacci-Folge bis 50
+  /**
+   * Ausgabe der Fibonacci-Folge bis 50
+   * 
+   * @param n Stelle
+   * @return Wert
+   */
   public static int fibonacci(int n)
   {
     if (n < 0)
@@ -22,7 +27,7 @@ public final class Fibonacci
 
     int last = 0;
     int current = 1;
-    while (n > 2) // Fehler: Hier müsste n>=2 stehen
+    while (n >= 2) // Fehler: Hier müsste n>=2 stehen
     {
       int old = current;
       current = last + current;
