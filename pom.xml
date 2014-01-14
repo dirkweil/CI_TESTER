@@ -40,6 +40,7 @@
   </dependencies>
 
   <profiles>
+    <!-- TODO: In build-master verschieben -->
     <profile>
       <id>test-jacoco</id>
       <properties>
@@ -64,6 +65,31 @@
                 <goals>
                   <goal>report</goal>
                 </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-clean-plugin</artifactId>
+            <version>2.5</version>
+            <executions>
+              <execution>
+                <id>remove jacoco results</id>
+                <phase>process-test-resources</phase>
+                <goals>
+                  <goal>clean</goal>
+                </goals>
+                <configuration>
+                  <excludeDefaultDirectories>true</excludeDefaultDirectories>
+                  <filesets>
+                    <fileset>
+                      <directory>${project.build.directory}</directory>
+                      <includes>
+                        <include>jacoco.exec</include>
+                      </includes>
+                    </fileset>
+                  </filesets>
+                </configuration>
               </execution>
             </executions>
           </plugin>
