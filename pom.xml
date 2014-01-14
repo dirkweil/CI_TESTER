@@ -13,14 +13,14 @@
   <version>1.0.0-SNAPSHOT</version>
 
   <packaging>jar</packaging>
-  
+
   <properties>
     <!-- 
       Code-Check-Konfiguration.
       Dies sind die Werte aus den Parent-Projekten. Sie können hier zum Ausprobieren aders gesetzt werden.
       -->
     <code.check.config>GEDOPLAN</code.check.config>
-    
+
     <checkstyle.config>${code.check.config}</checkstyle.config>
     <checkstyle.disabled>false</checkstyle.disabled>
     <checkstyle.config.location>checkstyle_${checkstyle.config}.xml</checkstyle.config.location>
@@ -38,4 +38,37 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <profiles>
+    <profile>
+      <id>test-jacoco</id>
+      <properties>
+        <skipTests>false</skipTests>
+      </properties>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.6.4.201312101107</version>
+            <executions>
+              <execution>
+                <id>prepare-agent</id>
+                <goals>
+                  <goal>prepare-agent</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>report</id>
+                <phase>test</phase>
+                <goals>
+                  <goal>report</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
