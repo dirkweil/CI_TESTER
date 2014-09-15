@@ -29,8 +29,8 @@ public final class Fibonacci
 
     int last = 0;
     int current = 1;
-    // while (n > 2) // [Fehler: Bricht zu früh ab]
-    while (n >= 2)
+    while (n > 2) // [Fehler: Bricht zu früh ab]
+    // while (n >= 2)
     {
       int old = current;
       current = last + current;
