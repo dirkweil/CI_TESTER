@@ -7,12 +7,12 @@ package de.gedoplan.seminar.citester;
  */
 public final class Fibonacci
 {
-  /*
+  /**
    * [CS-Warnung: Dies sollte Javadoc sein, ist aber nur ein einfacher Kommentar]
    * Ausgabe der Fibonacci-Folge bis 50
-   * 
+   *
    * @param n Stelle
-   * 
+   *
    * @return Wert
    */
   public static int fibonacci(int n)
