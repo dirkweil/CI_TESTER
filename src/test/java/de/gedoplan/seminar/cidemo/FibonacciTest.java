@@ -1,7 +1,9 @@
-package de.gedoplan.seminar.citester;
+package de.gedoplan.seminar.cidemo;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
+
+import de.gedoplan.seminar.cidemo.Fibonacci;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package de.gedoplan.seminar.citester;
+package de.gedoplan.seminar.cidemo;
 
 /**
  * Demo-Klasse: Berechnung der Fibonacci-Zahlen.

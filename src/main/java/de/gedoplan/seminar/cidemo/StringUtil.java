@@ -1,4 +1,4 @@
-package de.gedoplan.seminar.citester;
+package de.gedoplan.seminar.cidemo;
 
 import java.text.CharacterIterator;
 import java.text.StringCharacterIterator;
