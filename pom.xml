@@ -9,7 +9,7 @@
     <version>7.1.3</version>
   </parent>
 
-  <groupId>de.gedoplan.seminar</groupId>
+  <groupId>de.gedoplan.training.trainer</groupId>
   <artifactId>ciDemo</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 
